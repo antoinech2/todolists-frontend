@@ -36,8 +36,8 @@ export default function App() {
 
   // TODO: fix any, use type from API
   const items: MenuItem[] = lists.map((list: any) => ({
-    key: list,
-    label: list
+    key: list.name,
+    label: list.name
   }));
 
   function handleListAdded(listName: string): void {
